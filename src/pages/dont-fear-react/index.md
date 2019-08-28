@@ -1,0 +1,17 @@
+---
+path: '/dont-fear-react'
+date: '2019-08-22'
+title: 'Don't Feat The Component Model - Managing State With React'
+tags: ['state', 'management', 'react', 'redux', 'hooks', 'context']
+excerpt: 'Another Look At The Fundementals'
+---
+
+When I first learned React, I feared the Component model. I had no idea what the hell 'unidirectional data flow' meant and I certainly didn't comprehend why Composition was better than inheritance. The Component model in React can be scary, and it's hard to train yourself to 'Think In React', but my god is it worth the effort. When I started my first job in the industry as an intern last summer, I was working on a React project that used Redux for state management. Now, I would not say that we were using Redux very efficiantly, and it seemed to be hugely important to our codebase, everything that was important relied on it. So do you think I decided I would spend my time learning React? Well, I did a little bit to get by, but mostly I spent my time learning Redux. I was not a React developer, I was a react-redux developer.
+
+This is bad for a plethora of reasons, but here's a pretty good example. I was never big into academic type programming with C and Java, but React made programming fun for me. It was the first time I had ever really enjoyed myself coding, so I would do personal projects after work to try and get ahead of the curve. I decided to build a little React application that could help kids who went to my University plan their class schedule. Looking back on it, it was a pretty simple project, but I got lost very quickly. I tried my absolute hardest to write it without reaching for Redux, I really did. But, after a few days, I gave in, and I ended up putting all of my state in the Redux store. Yes, all of my state.
+
+Beyond the myriad technical reasons why you should not put ALL of your state into Redux, there was a more philosophical reason that this was a poor choice, and I think it's more important than the technical ones in this instance. Using Redux allowed me to avoid confronting the Component model. Really, it allowed me to avoid confronting React. Redux and other state management tools have their place, but I think that they can be a dangerous temptation for newer developers to completely subvert the React model of state management. In my opinion, this isn't great for said newer developers growth and development. By not understanding React, you allow yourself to become too reliant on third party solutions, using them as a crutch to compensate for your lack of fundemental knowledge. Ultimately that'll end up impacting your codebase negatively (especially if you're using Redux) and your orgnization negatively. You start with one react-redux developer, and then they train up another generation of react-redux developers, and on and on it goes.
+
+Now, I'm not saying to not use Redux, but I am saying that if you're a new developer, it is increidbly worthwhile to take the time to learn to think about state as it maps to your React components. Basically, you should learn React. It feels so, so nice to be completely comfortable in a codebase and to be confidant that you can make a significant change or refactor without reaching for a crutch. Now, learning React is pretty tough, which is why I avoided it for as long as I did, but now I'd like to think I know a thing or two, and I want to help you out, so let's get started!
+
+## The Component Model
