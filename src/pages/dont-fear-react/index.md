@@ -1,12 +1,32 @@
 ---
 path: '/dont-fear-react'
 date: '2019-08-22'
-title: 'Don't Feat The Component Model - Managing State With React'
+title: 'Don't Fear The Component Model - Managing State With React'
 tags: ['state', 'management', 'react', 'redux', 'hooks', 'context']
 excerpt: 'Another Look At The Fundementals'
 ---
 
+** basically, learning react is challenging and it hard to ramp up
+** especially in a high pressure environment when you want to make an impact as quickly as possible
+** so you may be tempted to patch up your lack of knowledge with third party tools that make it easy to circumvent React restrictions
+** this is ultimately a bad choice because you end up stunting your React growth, which is what most of these third party tools are meant supplement
+** you wont even be able to utilize those third party tools to their maximum potential and usefullness without extensive React knowledge
+** if you spend the time to truly learn react, you may be slower to ramp up, but when you do, your impact will be much more substantial
+\*\* even people who didn't have my time restraints and maybe want to just make an app may be tempted as well, don't be.
+
 When I was learning React, I feared the Component model. I had no idea what the hell 'unidirectional data flow' meant and I barely understood fundemental concepts like `Lifting State Up`. This proved to be a problem for me as I started to become more interested in Front-End development. When I started my first job in the industry as an intern last summer, I was working on a React project that used Redux for state management. Looking back on it, I'm not entirely sure that we were using Redux in an effective way. Our codebase was littered with Redux code, and to my untrained eye, it seemed as though Redux was just as, if not more important than React itself. I was perfectly content with this, as someone who feared the component model at the time. One might expect someone new to a React job would spend the majority of their time learning React, but this wasn't the case for me. I did spend some time with React of course, enough to get my feet wet and do well on the job, but I spent far more of my personal time learning about Redux. I wasn't a React developer last summer, I was a react-redux developer. The component model can be scary, and training yourself to think in React can be a challenge, but ultimately it'll be worthwhile for you as a developer.
+
+Leraning React is hard. When you first look through the documentation, you may become overwhelmed by the sheer number of concepts that there are to learn. Now, with hooks running around, you may even feel like you need to learn twice as much. If you're a beginner web developer and aren't solid on web fundementals, jumping into React can become even more challenging as you try to learn the Web and React simultaneosly. When I started to learn React, this difficulty put me in a precarious situation.
+
+I started my first job in the industry last summer as an intern, working on a React project that used Redux for state management. I was a complete beginner when it came to web development. I barely knew what the DOM was, let alone fully understanding basic, fundemental React concepts like `Lifting State Up`. Depsite the massive knowledge gap between myself and the other members on my team, I desperately wanted to provide value and make a real impact on my project during the three month time period that I had.
+
+This put me in a dilemma. React was clearly the backbone of our project, but learning it to a sufficient degree in order to be truly productive and impactful seemed almost impossible given my time restraints. So, I decided to find other areas in which I could be impactful. Redux seemed significantly more approachable to me. It's a small library with only a couple of fundemental concepts, and we relied upon it heavily in our codebase. Almost too heavily I would say looking back on it, but of course I had no clue at the time.
+
+So instead of making the wise, long term decision of spending my free time during those three monthes becoming more proficient at React and the Web generally, I simply learned enough so that I could get by and put the rest of my effort into learning Redux so that I could be immediately productive in the context of my less-than-ideal codebase. I wasn't a React developer, I was a react-redux developer. Now, there's nothing wrong with a developer that leverages both React and Redux effectively, but I was a developer that was using Redux as a crutch to compensate for a lack of React knowledge, and this meant that I was doomed to utilize both innefectively.
+
+I had no idea what the hell 'unidirectional data flow' meant and I barely understood the basic, fundemental concepts of React like `Lifting State Up`. Despite my lack of knowledge, I desperately wanted to provide value and make an impact during my three month stint in the industry before I had to head back to school. At the time, React just seemed like too much of a behemoth for me to learn and make an impact with in such a short period of time, so I decided to look to Redux, which also played a pivotal role in our codebase. It seemed more approachable to me, and instead of spending most of my free time learning React, which would've made perfect sense, I spent the majority of my free time learning Redux. While there isn't anything inherently wrong with learning Redux, I prioritized it over learning React, which is silly considering Redux is meant to supplement tools like React.
+
+When I first learned React, I was afraid of it. I didn't realize it at the time, but as I started to overcome this fear
 
 This focus on Redux, coupled with my lack of understanding of React was bad for a couple of reasons, one being personal and one being organizational. Personally, it meant that I was unintentionally stunting my growth as a developer and forcing myself to use Redux as a crutch. As an example, let's talk about a personal project of mine that I started that summer. I wanted to build a simple scheduling application to help students that went to my University. I saw it as a great opportunity to learn React outside of the office setting, and I went into the project with the intention of not using Redux. This was a good goal, looking back on it, but I didn't stick with it. I started to struggle almost immediately, which is not uncommon for someone learning React. I really did try to write it without reaching for Redux, but I wanted to complete the project more than I wanted to be disciplined, and I gave in. Eventually, all of my state ended up int he Redux store. All of it.
 
