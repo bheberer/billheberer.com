@@ -1,6 +1,5 @@
-import React from 'React';
+import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { css } from '@emotion/core';
 import feather from 'feather-icons';
 
 import avatar from '../assets/avatar.png';
