@@ -13,6 +13,7 @@ export default function GlobalStyleProvider({ children }) {
         styles={{
           body: {
             backgroundColor: background,
+            overflowY: 'scroll',
             font: '16px "Helvetica Neue", Helvetica, Arial, sans-serif',
             display: 'flex',
             flexDirection: 'column',

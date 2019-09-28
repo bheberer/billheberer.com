@@ -4,6 +4,7 @@ import feather from 'feather-icons';
 import { useTheme } from 'emotion-theming';
 
 import avatar from '../assets/avatar.png';
+import Toggle from './Toggle';
 
 export default function Header({ isDarkMode, setIsDarkMode }) {
   return (
@@ -40,7 +41,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
 
         return (
           <>
-            <span css={{ height: 25, width: 25, backgroundColor: 'blue' }}>
+            {/* <span css={{ height: 25, width: 25, backgroundColor: 'blue' }}>
               <input
                 type="checkbox"
                 name="themeToggle"
@@ -55,7 +56,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                   width: 0
                 }}
               />
-            </span>
+            </span> */}
             <header
               css={{
                 display: 'flex',
@@ -134,7 +135,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                     }}
                   >
                     <a
-                      aria-label='Github'
+                      aria-label="Github"
                       href={githubURL}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -147,7 +148,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                       }}
                     />
                     <a
-                      aria-label='LinkedIn'
+                      aria-label="LinkedIn"
                       href={linkedinURL}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -160,7 +161,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                       }}
                     />
                     <a
-                      aria-label='Twitter'
+                      aria-label="Twitter"
                       href={twitterURL}
                       target="_blank"
                       rel="noopener noreferrer"
