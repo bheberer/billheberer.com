@@ -1,53 +1,65 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import TransitionLink, {
-  TransitionState,
-  TransitionPortal
-} from 'gatsby-plugin-transition-link';
+import { motion } from 'framer-motion';
+import { useTheme } from 'emotion-theming';
 
-import Header from '../components/Header';
-import GlobalStyleProvider from '../components/GlobalStyleProvider';
-import PageTransitionWrapper from '../components/PageTransitionWrapper';
-
-export default function Template({ data }) {
-  const { title } = data.markdownRemark.frontmatter;
+export default function Template({ data, location }) {
+  const { title, date } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
 
+  const pageVariants = {
+    initial: { opacity: 0, x: 300 },
+    enter: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3, ease: 'easeInOut' }
+    },
+    exit: {
+      opacity: 0,
+      x: -300,
+      transition: { duration: 0.3, ease: 'easeInOut' }
+    }
+  };
+
+  const { colors } = useTheme();
+
+  const { primary, neutral, neutralLight } = colors;
+
   return (
-    <TransitionState>
-      {({ transitionStatus }) => (
-        <PageTransitionWrapper
-          pose={[
-            ['entering', 'entered'].includes(transitionStatus)
-              ? 'enter'
-              : 'exit'
-          ]}
-        >
-          <GlobalStyleProvider>
-            <Header />
-            <article
-              css={{
-                maxWidth: '600px',
-                h1: { color: '#59C2DF', fontSize: '36px' },
-                h2: { color: '#59C2DF' },
-                hr: {
-                  borderStyle: 'solid',
-                  borderWidth: '0.5px',
-                  borderColor: '#59C2DF'
-                },
-                p: {
-                  fontSize: '20px',
-                  color: 'black'
-                }
-              }}
-            >
-              <h1>{title}</h1>
-              <p dangerouslySetInnerHTML={{ __html: html }} />
-            </article>
-          </GlobalStyleProvider>
-        </PageTransitionWrapper>
-      )}
-    </TransitionState>
+    <motion.article
+      key={location.pathname}
+      variants={pageVariants}
+      animate="enter"
+      initial="initial"
+      exit="exit"
+      css={{
+        h1: {
+          color: primary,
+          fontSize: '32px',
+          fontWeight: 300,
+          display: 'flex',
+          flexDirection: 'row'
+        },
+        h2: { color: primary, fontWeight: 300 },
+        h3: { color: neutralLight, fontWeight: 300 },
+        hr: {
+          borderStyle: 'solid',
+          borderWidth: '0.5px',
+          borderColor: '#D9D9D9'
+        },
+        p: {
+          fontSize: '20px',
+          color: neutral,
+          lineHeight: '30px',
+          marginBottom: '1.75rem'
+        }
+      }}
+    >
+      <h1>{title}</h1>
+      <h3>{date}</h3>
+      <hr />
+      <p dangerouslySetInnerHTML={{ __html: html }} />
+    </motion.article>
   );
 }
 
@@ -57,6 +69,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
