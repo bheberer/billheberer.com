@@ -88,7 +88,9 @@ So, what can you do to make this back and forth process go as well as possible f
 
 ## The Process
 
+I think that the most valuable thing that you can do as a junior developer is to show up, be engaged and be yourself. That's it. That may not sound like much, but the things that happen when you're engaged can be truly benficial to the team and the project your working on as a whole.
 
+The first thing that you bring to the table when you're engaged is a new perspective. Just by itself, your fresh outlook on software and the industry can make a big impact. Senior developers that have been in the industry for a number of years can get jaded over time. From their perspective, they've seen it all. They've probably worked on a number of different projects where certain technologies worked and others didn't and through this 
 
 
 

@@ -13,8 +13,8 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
         query {
           site {
             siteMetadata {
-              title
-              description
+              author
+              bio
               employer
               employerURL
               twitterURL
@@ -26,8 +26,8 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
       `}
       render={data => {
         const {
-          title,
-          description,
+          author,
+          bio,
           employer,
           employerURL,
           twitterURL,
@@ -102,7 +102,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                 }
               }}
             >
-              <Link to="">
+              <Link to="/">
                 <img src={avatar} alt="Bill Heberer" />
               </Link>
               <div
@@ -126,7 +126,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                     }
                   }}
                 >
-                  <h1>{title}</h1>
+                  <h1>{author}</h1>
                   <nav
                     css={{
                       margin: '0 auto',
@@ -176,7 +176,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                   </nav>
                 </div>
                 <h2>
-                  {description}
+                  {bio}
                   <a
                     href={employerURL}
                     target="_blank"

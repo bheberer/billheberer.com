@@ -6,18 +6,22 @@ import GlobalStyleProvider from './GlobalStyleProvider';
 import Header from './Header';
 import { lightTheme, darkTheme } from '../styles/themes';
 import Toggle from './Toggle';
+import SEO from './SEO';
 
 export default function Layout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-      <GlobalStyleProvider>
-        <Toggle />
-        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <AnimatePresence exitBeforeEnter>
-          {React.cloneElement(children, { setIsDarkMode, isDarkMode })}
-        </AnimatePresence>
-      </GlobalStyleProvider>
-    </ThemeProvider>
+    <>
+      <SEO />
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <GlobalStyleProvider>
+          <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+          <Header />
+          <AnimatePresence exitBeforeEnter>
+            {React.cloneElement(children, { setIsDarkMode, isDarkMode })}
+          </AnimatePresence>
+        </GlobalStyleProvider>
+      </ThemeProvider>
+    </>
   );
 }

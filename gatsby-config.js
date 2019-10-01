@@ -6,9 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Bill Heberer',
-    description: 'Software Engineer building customer experiences at ',
+    title: 'Personal Blog of Bill Heberer',
+    author: 'Bill Heberer',
+    bio: 'Software Engineer building customer experiences at ',
+    description: 'Personal blog of Bill Heberer. Software Engineer at GoDaddy and React enthusiast.',
     employer: 'GoDaddy',
+    siteURL: 'https://www.billheberer.com',
     employerURL: 'https://www.godaddy.com/',
     linkedinURL: 'https://www.linkedin.com/in/william-heberer-umd/',
     githubURL: 'https://github.com/bheberer',
@@ -19,6 +22,7 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
