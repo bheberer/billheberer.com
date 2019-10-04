@@ -15,6 +15,7 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
       tabIndex={0}
       css={{
         marginTop: 10,
+        marginBottom: 15,
         display: 'block',
         width: 50,
         height: 25,
@@ -24,8 +25,8 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
         '&:hover': {
           backgroundColor: primaryDark
         },
-        ['@media (max-width: 420px)']: {
-          marginBottom: -40,
+        ['@media (max-width: 600px)']: {
+          marginBottom: -55,
           position: 'relative'
         }
       }}

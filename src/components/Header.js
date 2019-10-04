@@ -86,6 +86,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                   fontWeight: 600
                 },
                 ['@media (max-width: 600px)']: {
+                  marginTop: 15,
                   img: {
                     top: '18px',
                     position: 'relative'
