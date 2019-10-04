@@ -22,7 +22,7 @@ export default function Index({ data, location }) {
     border,
     neutralLight
   } = colors;
-  
+
   return (
     <motion.div
       key={location.pathname}
@@ -52,12 +52,6 @@ export default function Index({ data, location }) {
             maxWidth: '450px',
             lineHeight: '32.5px',
             fontWeight: 700
-          }
-        },
-        ['@media (max-width: 600px)']: {
-          ul: {
-            width: '90%',
-            margin: '0 auto'
           }
         }
       }}

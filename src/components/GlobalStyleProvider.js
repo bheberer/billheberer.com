@@ -32,6 +32,11 @@ export default function GlobalStyleProvider({ children }) {
                 color: primaryDark
               }
             }
+          },
+          ['@media (max-width: 600px)']: {
+            body: {
+              maxWidth: '90%'
+            }
           }
         }}
       />
