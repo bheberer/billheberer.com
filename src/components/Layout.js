@@ -15,8 +15,7 @@ export default function Layout({ children }) {
       <SEO />
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyleProvider>
-          <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-          <Header />
+          <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <AnimatePresence exitBeforeEnter>
             {React.cloneElement(children, { setIsDarkMode, isDarkMode })}
           </AnimatePresence>

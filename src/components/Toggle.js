@@ -14,20 +14,15 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
       aria-label="dark mode toggle"
       tabIndex={0}
       css={{
-        marginTop: 10,
-        marginBottom: 15,
         display: 'block',
         width: 50,
         height: 25,
         backgroundColor: primary,
+        marginLeft: 'auto',
         borderRadius: '50px',
         transition: 'all .2s ease-in-out',
         '&:hover': {
           backgroundColor: primaryDark
-        },
-        ['@media (max-width: 600px)']: {
-          marginBottom: -55,
-          position: 'relative'
         }
       }}
       onClick={() => setIsDarkMode(!isDarkMode)}

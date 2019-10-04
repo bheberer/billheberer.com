@@ -40,164 +40,192 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
         const { neutralDark, neutralLight, border } = colors;
 
         return (
-          <>
-            {/* <span css={{ height: 25, width: 25, backgroundColor: 'blue' }}>
-              <input
-                type="checkbox"
-                name="themeToggle"
-                value={isDarkMode}
-                onClick={() => setIsDarkMode(!isDarkMode)}
-                aria-label="Dark Mode Toggle"
-                css={{
-                  position: 'absolute',
-                  opacity: 0,
-                  cursor: 'pointer',
-                  height: 0,
-                  width: 0
-                }}
-              />
-            </span> */}
-            <header
-              css={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderBottom: `1px solid ${border}`,
-                paddingBottom: '20px',
-                marginBottom: '55px',
+          <header
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              img: {
+                maxWidth: '100px',
+                marginTop: 15
+              },
+              h1: {
+                margin: '0',
+                fontWeight: '600',
+                fontSize: '48px',
+                color: neutralDark
+              },
+              h2: {
+                margin: '0px',
+                fontWeight: '300',
+                fontSize: '20px',
+                color: neutralLight
+              },
+              a: {
+                fontWeight: 600
+              },
+              ['@media (max-width: 600px)']: {
+                marginTop: 15
+              },
+              ['@media (max-width: 420px)']: {
                 img: {
-                  maxWidth: '100px',
-                  marginTop: 15
+                  maxWidth: '80px'
                 },
                 h1: {
-                  margin: '0',
-                  fontWeight: '600',
-                  fontSize: '48px',
-                  color: neutralDark
+                  fontSize: '36px'
                 },
                 h2: {
-                  margin: '0px',
-                  fontWeight: '300',
-                  fontSize: '20px',
-                  color: neutralLight
-                },
-                a: {
-                  fontWeight: 600
-                },
-                ['@media (max-width: 600px)']: {
-                  marginTop: 15,
-                  img: {
-                    top: '18px',
-                    position: 'relative'
-                  }
-                },
-                ['@media (max-width: 420px)']: {
-                  img: {
-                    maxWidth: '80px'
-                  },
-                  h1: {
-                    fontSize: '36px'
-                  },
-                  h2: {
-                    fontSize: '16px'
-                  }
-                },
-                ['@media (max-width: 340px)']: {
-                  h1: {
-                    fontSize: '32px'
-                  }
+                  fontSize: '16px'
                 }
+              },
+              ['@media (max-width: 340px)']: {
+                h1: {
+                  fontSize: '32px'
+                }
+              }
+            }}
+          >
+            <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            <Bio
+              author={author}
+              bio={bio}
+              employerURL={employer}
+              employer={employer}
+              border={border}
+            />
+            {/* <Link to="/">
+              <img src={avatar} alt="Bill Heberer" />
+            </Link> */}
+            {/* <div
+              css={{
+                display: 'flex',
+                flexDirection: 'column',
+                marginLeft: '20px'
               }}
             >
-              <Link to="/">
-                <img src={avatar} alt="Bill Heberer" />
-              </Link>
               <div
                 css={{
                   display: 'flex',
-                  flexDirection: 'column',
-                  marginLeft: '20px'
+                  alignItems: 'center',
+                  ['@media (max-width: 600px)']: {
+                    flexDirection: 'column-reverse',
+                    alignItems: 'flex-start',
+                    nav: {
+                      alignSelf: 'flex-end',
+                      margin: '0px'
+                    }
+                  }
                 }}
               >
-                <div
-                  css={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    ['@media (max-width: 600px)']: {
-                      flexDirection: 'column-reverse',
-                      alignItems: 'flex-start',
-                      nav: {
-                        alignSelf: 'flex-end',
-                        margin: '0px'
-                      }
-                    }
-                  }}
-                >
-                  <h1>{author}</h1>
-                  <nav
-                    css={{
-                      margin: '0 auto',
-                      paddingTop: '10px',
-                      a: { margin: '0 15px 0 15px' }
-                    }}
-                  >
-                    <a
-                      aria-label="Github"
-                      href={githubURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      dangerouslySetInnerHTML={{
-                        __html: feather.icons['github'].toSvg({
-                          ['stroke-width']: 2.5,
-                          width: 32,
-                          height: 32
-                        })
-                      }}
-                    />
-                    <a
-                      aria-label="LinkedIn"
-                      href={linkedinURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      dangerouslySetInnerHTML={{
-                        __html: feather.icons['linkedin'].toSvg({
-                          ['stroke-width']: 2.5,
-                          width: 32,
-                          height: 32
-                        })
-                      }}
-                    />
-                    <a
-                      aria-label="Twitter"
-                      href={twitterURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      dangerouslySetInnerHTML={{
-                        __html: feather.icons['twitter'].toSvg({
-                          ['stroke-width']: 2.5,
-                          width: 32,
-                          height: 32
-                        })
-                      }}
-                    />
-                  </nav>
-                </div>
-                <h2>
-                  {bio}
-                  <a
-                    href={employerURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i>{employer}</i>
-                  </a>
-                </h2>
+                <h1>{author}</h1>
               </div>
-            </header>
-          </>
+              <h2>
+                {bio}
+                <a href={employerURL} target="_blank" rel="noopener noreferrer">
+                  <i>{employer}</i>
+                </a>
+              </h2>
+            </div> */}
+          </header>
         );
       }}
     />
+  );
+}
+
+function Navbar({
+  githubURL,
+  linkedinURL,
+  twitterURL,
+  isDarkMode,
+  setIsDarkMode
+}) {
+  return (
+    <nav
+      css={{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        paddingTop: '10px',
+        a: { margin: '0 15px 0 15px' }
+      }}
+    >
+      <a
+        aria-label="Github"
+        href={githubURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        dangerouslySetInnerHTML={{
+          __html: feather.icons['github'].toSvg({
+            ['stroke-width']: 2.5,
+            width: 32,
+            height: 32
+          })
+        }}
+      />
+      <a
+        aria-label="LinkedIn"
+        href={linkedinURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        dangerouslySetInnerHTML={{
+          __html: feather.icons['linkedin'].toSvg({
+            ['stroke-width']: 2.5,
+            width: 32,
+            height: 32
+          })
+        }}
+      />
+      <a
+        aria-label="Twitter"
+        href={twitterURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        dangerouslySetInnerHTML={{
+          __html: feather.icons['twitter'].toSvg({
+            ['stroke-width']: 2.5,
+            width: 32,
+            height: 32
+          })
+        }}
+      />
+      <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+    </nav>
+  );
+}
+
+function Bio({ author, bio, employerURL, employer, border }) {
+  return (
+    <section
+      css={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderBottom: `1px solid ${border}`,
+        paddingBottom: '20px',
+        marginBottom: '35px'
+      }}
+    >
+      <Link to="/">
+        <img src={avatar} alt="Bill Heberer" />
+      </Link>
+      <div
+        css={{
+          display: 'flex',
+          flexDirection: 'column',
+          marginLeft: '20px'
+        }}
+      >
+        <h1>{author}</h1>
+        <h2>
+          {bio}
+          <a href={employerURL} target="_blank" rel="noopener noreferrer">
+            <i>{employer}</i>
+          </a>
+        </h2>
+      </div>
+    </section>
   );
 }

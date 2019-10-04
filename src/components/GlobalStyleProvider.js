@@ -35,8 +35,7 @@ export default function GlobalStyleProvider({ children }) {
           },
           ['@media (max-width: 600px)']: {
             body: {
-              maxWidth: '90%',
-              paddingTop: 15
+              maxWidth: '90%'
             }
           }
         }}
