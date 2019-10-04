@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import favicon from '../../static/favicon.png';
 
 const SEOQuery = graphql`
   query GetSiteMetadata {
@@ -36,6 +37,14 @@ export default function SEO() {
               { property: 'og:url', content: siteURL },
               { property: 'og:title', content: title },
               { property: 'og:description', content: description }
+            ]}
+            link={[
+              {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '48x48',
+                href: `${favicon}`
+              }
             ]}
           />
         );

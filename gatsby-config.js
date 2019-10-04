@@ -9,7 +9,8 @@ module.exports = {
     title: 'Personal Blog of Bill Heberer',
     author: 'Bill Heberer',
     bio: 'Software Engineer building customer experiences at ',
-    description: 'Personal blog of Bill Heberer. Software Engineer at GoDaddy and React enthusiast.',
+    description:
+      'Personal blog of Bill Heberer. Software Engineer at GoDaddy and React enthusiast.',
     employer: 'GoDaddy',
     siteURL: 'https://www.billheberer.com',
     employerURL: 'https://www.godaddy.com/',
@@ -26,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/Layout.js`),
-      },
+        component: require.resolve(`./src/components/Layout.js`)
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
