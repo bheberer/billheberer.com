@@ -62,6 +62,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center',
+                justifyContent: 'center',
                 borderBottom: `1px solid ${border}`,
                 paddingBottom: '20px',
                 marginBottom: '55px',
@@ -86,7 +87,8 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                 },
                 ['@media (max-width: 600px)']: {
                   img: {
-                    alignSelf: 'flex-end'
+                    top: '18px',
+                    position: 'relative'
                   }
                 },
                 ['@media (max-width: 420px)']: {
@@ -98,6 +100,11 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                   },
                   h2: {
                     fontSize: '16px'
+                  }
+                },
+                ['@media (max-width: 340px)']: {
+                  h1: {
+                    fontSize: '32px'
                   }
                 }
               }}

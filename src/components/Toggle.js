@@ -23,6 +23,10 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
         transition: 'all .2s ease-in-out',
         '&:hover': {
           backgroundColor: primaryDark
+        },
+        ['@media (max-width: 420px)']: {
+          marginBottom: -40,
+          position: 'relative'
         }
       }}
       onClick={() => setIsDarkMode(!isDarkMode)}
