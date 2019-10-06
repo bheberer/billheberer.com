@@ -48,7 +48,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               justifyContent: 'center',
               img: {
                 maxWidth: '100px',
-                marginTop: 15
+                marginTop: 5
               },
               h1: {
                 margin: '0',
@@ -68,7 +68,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               ['@media (max-width: 600px)']: {
                 marginTop: 15
               },
-              ['@media (max-width: 420px)']: {
+              ['@media (max-width: 450px)']: {
                 img: {
                   maxWidth: '80px'
                 },
@@ -79,9 +79,9 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
                   fontSize: '16px'
                 }
               },
-              ['@media (max-width: 340px)']: {
+              ['@media (max-width: 360px)']: {
                 h1: {
-                  fontSize: '32px'
+                  fontSize: '30px'
                 }
               }
             }}
@@ -92,6 +92,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               githubURL={githubURL}
               linkedinURL={linkedinURL}
               twitterURL={twitterURL}
+              border={border}
             />
             <Bio
               author={author}
@@ -100,39 +101,6 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               employer={employer}
               border={border}
             />
-            {/* <Link to="/">
-              <img src={avatar} alt="Bill Heberer" />
-            </Link> */}
-            {/* <div
-              css={{
-                display: 'flex',
-                flexDirection: 'column',
-                marginLeft: '20px'
-              }}
-            >
-              <div
-                css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  ['@media (max-width: 600px)']: {
-                    flexDirection: 'column-reverse',
-                    alignItems: 'flex-start',
-                    nav: {
-                      alignSelf: 'flex-end',
-                      margin: '0px'
-                    }
-                  }
-                }}
-              >
-                <h1>{author}</h1>
-              </div>
-              <h2>
-                {bio}
-                <a href={employerURL} target="_blank" rel="noopener noreferrer">
-                  <i>{employer}</i>
-                </a>
-              </h2>
-            </div> */}
           </header>
         );
       }}
@@ -150,6 +118,8 @@ function Navbar({
   return (
     <nav
       css={{
+        marginTop: 10,
+        marginBottom: 20,
         display: 'flex',
         width: '100%',
         justifyContent: 'space-around',
@@ -208,7 +178,7 @@ function Bio({ author, bio, employerURL, employer, border }) {
     <section
       css={{
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         justifyContent: 'center',
         borderBottom: `1px solid ${border}`,
         paddingBottom: '20px',
