@@ -86,11 +86,17 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               }
             }}
           >
-            <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            <Navbar
+              isDarkMode={isDarkMode}
+              setIsDarkMode={setIsDarkMode}
+              githubURL={githubURL}
+              linkedinURL={linkedinURL}
+              twitterURL={twitterURL}
+            />
             <Bio
               author={author}
               bio={bio}
-              employerURL={employer}
+              employerURL={employerURL}
               employer={employer}
               border={border}
             />
@@ -146,10 +152,11 @@ function Navbar({
       css={{
         display: 'flex',
         width: '100%',
-        justifyContent: 'flex-start',
+        justifyContent: 'space-around',
         alignItems: 'center',
         paddingTop: '10px',
-        a: { margin: '0 15px 0 15px' }
+        a: { margin: '0 15px 0 15px' },
+        marginLeft: -30
       }}
     >
       <a
@@ -160,8 +167,8 @@ function Navbar({
         dangerouslySetInnerHTML={{
           __html: feather.icons['github'].toSvg({
             ['stroke-width']: 2.5,
-            width: 32,
-            height: 32
+            width: 25,
+            height: 25
           })
         }}
       />
@@ -173,8 +180,8 @@ function Navbar({
         dangerouslySetInnerHTML={{
           __html: feather.icons['linkedin'].toSvg({
             ['stroke-width']: 2.5,
-            width: 32,
-            height: 32
+            width: 25,
+            height: 25
           })
         }}
       />
@@ -186,8 +193,8 @@ function Navbar({
         dangerouslySetInnerHTML={{
           __html: feather.icons['twitter'].toSvg({
             ['stroke-width']: 2.5,
-            width: 32,
-            height: 32
+            width: 25,
+            height: 25
           })
         }}
       />

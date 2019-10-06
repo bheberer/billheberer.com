@@ -14,9 +14,10 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
       aria-label="dark mode toggle"
       tabIndex={0}
       css={{
-        display: 'block',
+        display: 'flex',
+        alignItems: 'center',
         width: 50,
-        height: 25,
+        height: 24,
         backgroundColor: primary,
         marginLeft: 'auto',
         borderRadius: '50px',
@@ -32,12 +33,10 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
     >
       <span
         css={{
-          display: 'block',
           position: 'relative',
-          width: 22,
-          height: 22,
-          top: 1.5,
-          left: isDarkMode ? 26 : 2,
+          width: 20,
+          height: 20,
+          left: isDarkMode ? 27 : 2,
           transition: 'all .2s',
           borderRadius: '50%',
           backgroundColor: background,
@@ -51,10 +50,10 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
             color: background,
             display: 'block',
             position: 'relative',
-            top: -17,
+            top: 2.5,
             width: 20,
             height: 20,
-            left: 7
+            left: -12
           }}
           dangerouslySetInnerHTML={{
             __html: feather.icons['moon'].toSvg({
@@ -70,10 +69,10 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
             color: background,
             display: 'block',
             position: 'relative',
-            top: -17,
+            top: 2.5,
             width: 20,
             height: 20,
-            left: 28,
+            left: 6,
             zIndex: 1
           }}
           dangerouslySetInnerHTML={{

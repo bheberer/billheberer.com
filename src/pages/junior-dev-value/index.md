@@ -2,7 +2,7 @@
 path: '/junior-dev-value'
 date: 'Sep 13 2019'
 title: 'The Subtle, Yet Colossal Impact of "Junior" Developers'
-tags: ['state', 'management', 'react', 'redux', 'hooks', 'context']
+tags: ['junior', 'developers', 'beginners', 'value', 'impact']
 excerpt: 'How I Learned To Embrace My Role As An Inexeperienced Developer'
 ---
 
