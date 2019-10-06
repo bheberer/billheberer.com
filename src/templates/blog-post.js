@@ -58,7 +58,7 @@ export default function Template({ data, location }) {
       <h1>{title}</h1>
       <h3>{date}</h3>
       <hr />
-      <p dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </motion.article>
   );
 }
