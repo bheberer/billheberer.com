@@ -10,7 +10,7 @@ excerpt: 'How I Learned To Embrace My Role As An Inexeperienced Developer'
 
 Starting your first job in tech is hard.
 
-There are a bunch of reasons for this but I think that for the most part it comes down to the fact that there's a crazy amount of things that you need to learn all at once. Or at the very least, you feel like you have to learn them all at once, as you're constantly bombarded with dozens of terms that you've never heard of before.  
+There are a bunch of reasons for this but I think that for the most part it comes down to the fact that there's a crazy amount of things that you need to learn all at once. Or at the very least, you feel like you have to learn them all at once, as you're constantly bombarded with dozens of terms that you've never heard of before.
 
 If you start in a web developer position without knowing anything about the web, like myself, then odds are you'll be spending a lot of time just trying to understand the platform that you're going to be writing code for, let alone understanding the framework your team uses.
 
@@ -32,7 +32,7 @@ Meetings were also painful in their own way. For me, they usually involved a con
 
 I would feel this reluctance because I would often lack so much context for a particular conversation that any quesiton I could've forumulated at the time would've completely derailed the meeting. For example, if a certain technology was brought up during the meeting that I wasn't aware of, I probably wouldn't ask about it.
 
-Why bother? It's not like someone is going to be able to explain a technology like Jenkins or Kubernetes to me in the middle of a meeting. Any response they would give me would probably lead to five more questions. 
+Why bother? It's not like someone is going to be able to explain a technology like Jenkins or Kubernetes to me in the middle of a meeting. Any response they would give me would probably lead to five more questions.
 
 Over time, all of this stuff began to pile on, and I became really bothered. I felt like I was a complete burden to my team. From my perspective, I was just absorbing knowledge and resources from my team on a daily basis without providing anything truly useful in return.
 
@@ -56,29 +56,29 @@ During my internship, I decided that Redux was going to be the thing that I woul
 
 ## The Result
 
-Without realizing it, I had made a pretty serious tradeoff. I was essentially saying that I was willing to forgoe the long term gains that I would recieve from learning the fundementals and in return, I would gain a boost to my productivity in the short term. 
+Without realizing it, I had made a pretty serious tradeoff. I was essentially saying that I was willing to forgoe the long term gains that I would recieve from learning the fundementals and in return, I would gain a boost to my productivity in the short term.
 
 If you had asked me what I felt about this tradeoff at the time, I would've told you that I was making the right call given the situation that I was in as an intern. Looking back on it now, I'm certain that I was on the bad end of that trade, and there are a couple of reasons that I feel this way.
 
-That productivity worked really well for me in the context of that internship. I got a lot of work done that summer, and I pushed a lot of code into production. For that most part, that code was actually pretty good. I'm proud of most of the code that I pushed out last summer. 
+That productivity worked really well for me in the context of that internship. I got a lot of work done that summer, and I pushed a lot of code into production. For that most part, that code was actually pretty good. I'm proud of most of the code that I pushed out last summer.
 
-Unfortunately though, there was some code that I pushed out last summer that I now cringe to think about. I'm sure that this isn't a novel feeling. If I was to go around and take a survey of developers out there, most would say that they've felt the same at some point. 
+Unfortunately though, there was some code that I pushed out last summer that I now cringe to think about. I'm sure that this isn't a novel feeling. If I was to go around and take a survey of developers out there, most would say that they've felt the same at some point.
 
 But, remember when I said before that I did end up making a significant code contribution? THAT was the bit of code that I look back on and cringe at. The code that ended up leaving the biggest mark on the codebase is the code that I believe to be the lowest quality of anything that I wrote that summer.
 
-While that's unfortunate in it of itself, I think that what was worse is that I made the decision that benefitted me in the short term, without thinking about my future beyond the internship. 
+While that's unfortunate in it of itself, I think that what was worse is that I made the decision that benefitted me in the short term, without thinking about my future beyond the internship.
 
-My lack of focus on the fundementals meant that it would actually take longer for me to get to the point in my career that I really wanted to be at. Being able to make those big, high quality contributions and partake in architectural discussion requires, at the bare minimum, an adept understanding of the fundementals, and I just wasn't focusing on it. 
+My lack of focus on the fundementals meant that it would actually take longer for me to get to the point in my career that I really wanted to be at. Being able to make those big, high quality contributions and partake in architectural discussion requires, at the bare minimum, an adept understanding of the fundementals, and I just wasn't focusing on it.
 
 It wasn't until after I left my job and took a real, deep dive into React that I gained enough knowledge to feel confident that I could at least make minor contributions to those kinds of conversations.
 
 ## The Revelation
 
-After I left my internship to head back to school, I finally began to reflect on what I had done. Ideally, I would be thinking about what I was doing as I was doing it, but I was so focused on getting stuff done that I didn't really take the time to do that. 
+After I left my internship to head back to school, I finally began to reflect on what I had done. Ideally, I would be thinking about what I was doing as I was doing it, but I was so focused on getting stuff done that I didn't really take the time to do that.
 
 It was during this year of school that I began to understand and be able to articulate all of the things that I've shared in this article so far. I'm really grateful that I was able to take this break, without it, who knows If I would've been able to really step back and make the correct choices.
 
-There were a bunch of things that I reflected on from my time as an intern. A lot of those things were pieces of advice and words of wisdom that my mentor and manager had shared with me. They're both great guys and were very supportive of me, always attempting to assuage my negative feelings whenever I brought it up to them. My problem was that I didn't listen very well, I was too wrapped up in what I felt. 
+There were a bunch of things that I reflected on from my time as an intern. A lot of those things were pieces of advice and words of wisdom that my mentor and manager had shared with me. They're both great guys and were very supportive of me, always attempting to assuage my negative feelings whenever I brought it up to them. My problem was that I didn't listen very well, I was too wrapped up in what I felt.
 
 One of the major points that they made to me that I simply didn't grasp until I left is that Junior developers, just like Senior developers, have an inherent value.
 
@@ -86,18 +86,33 @@ The thing is, is that the value Junior developers provide is a bit more subtle. 
 
 So, what can you do to make this back and forth process go as well as possible for everyone involved?
 
-## The Process
+## The Perspective
 
 I think that the most valuable thing that you can do as a junior developer is to show up, be engaged and be yourself. That's it. That may not sound like much, but the things that happen when you're engaged can be truly benficial to the team and the project your working on as a whole.
 
-The first thing that you bring to the table when you're engaged is a new perspective. Just by itself, your fresh outlook on software and the industry can make a big impact. Senior developers that have been in the industry for a number of years can get jaded over time. From their perspective, they've seen it all. They've probably worked on a number of different projects where certain technologies worked and others didn't and through this 
+The first thing that you bring to the table when you're engaged is a fresh perspective. When you're in any industry for a significant period of time, it's pretty easy to get cynical. This cynicism definetily has value, but it can get can in the way of potential improvements to your team's software if it becomes a ubiquitous mindset. An experienced, more cynical developer may be less willing to do experimental work because they had a prior negative experience, but as a new developer, you don't have the baggage of those experiences. You're in the perfect position to provide a balance in the overall mindset of your team.
 
+Maybe the senior developers on team won't want to spend time looking at something that may or may not work, but you can! Who better? It's pretty hard to waste the time of a new developer. Worst case scenario, you learn something new! Best case scenario, you introduce something to your project that probably wouldn't have made it in if you weren't there to get the work done. So really, as a junior dev, you have the unique opportunity to keep your team flexible and even innovative.
 
+With your fresh perspective, you're also going to be in a great position to challenge the status quo of your team. The most effective way that you can do this and affect change is simply by asking, 'Why?'
 
+Asking why things are done in certain ways or why certain technologies are used over others can be really hard questions to answer. Most of the time, things are done for very good, specific reasons. Most of the time. Sometimes, the reasons are not so obvious, and they may not be so obvious to the people on your team either. There's a solid chance that there are some things that your team does that are less than ideal but they just continue doing things that way because it's how they've always been done. Now, no one really wants to do something that is less than ideal, so asking 'Why?' can be a great way to call attention to a potential area of improvement. 
 
+Another thing that I think is incredibly useful for your team is participating in code review. Reviewing the code of other devs, particularly very high level devs, as a junior can be pretty scary, but you should be doing it regardless. Worst comes to worst, you can ask some questions if you don't understand something and gain some knowledge. In the best case, you can actually significantly increase the quality of your codebase.
+
+Simplicity is really important in a codebase. At the very least, it's important that everyone on the team is able to understand the code. By your very nature, you will keep senior devs who write crazy, over-engineered code in check, because by inserting yourself into the review process, they need to write the code in a way that the least experienced person is able to read it. Not only are you doing yourself a favor, but your doing everyone else on your team a favor by simplifying it for them as well.
+
+In fact, you're doing even more than that, you're making the codebase for everyone who is ever going to look at that code in the future, because eventually, some other team may have to maintain it, and they'll be far happier to see code that you were able to understand rather than code that only the senior devs could decipher.
+
+Seriously, do code reviews. I didn't do nearly enough of them during my internship out of fear but this was a mistake. Don't be afraid. 
+
+## The Questions
+
+This sort of comes as a result of having a fresh perspective, but often, junior developers end up challenging the status quo of their team. There are a couple of ways that 
+
+///
 
 Immediately I noticed that the start of my full-time work was completely different from the start of my first real experience, which was as an intern last summer. The project was different, a couple of the people were different, but for the most part, the difference mostly stemmed from me and how I felt about myself as an employee and a team member.
-
 
 This is a story about how I completely undervalued myself as a Junior Developer, and why you should avoid thinking that way that I did at all costs.
 
@@ -135,7 +150,7 @@ Another thing that I'm sure is not unique is that I was determined to overcome t
 
 ///
 
-Wanting to have an impact is great and all but I quickly realized that doing so was going to be a serious challenge. Again, this was mostly because I knew next to nothing about our tech stack.  For a good portion of my internship, I would come into work every day, sit down, look at our JIRA board, and immediately be stressed by the amount of things that I didn't know how to do. In fact, for a little while there, I couldn't do a single thing by myself. In order to get any work done, I would have to pair with somebody else on the team, which felt a little deflating. I knew that it was expected, because I was an intern in my first job ever, but I didn't like the feeling of being so reliant on everyone else.
+Wanting to have an impact is great and all but I quickly realized that doing so was going to be a serious challenge. Again, this was mostly because I knew next to nothing about our tech stack. For a good portion of my internship, I would come into work every day, sit down, look at our JIRA board, and immediately be stressed by the amount of things that I didn't know how to do. In fact, for a little while there, I couldn't do a single thing by myself. In order to get any work done, I would have to pair with somebody else on the team, which felt a little deflating. I knew that it was expected, because I was an intern in my first job ever, but I didn't like the feeling of being so reliant on everyone else.
 
 Meetings were also painful in their own way, just for different reasons. For me, they usually just consisted of constant floods of terms that I didn't understand. Often times I would kind of just stand there and attempt to stay afloat. I would try to ask questions as much as I could, but I often felt awkward doing this in meetings, especially ones that were outside the norm of our usual scrum ceremonies and therefore. I would feel this reluctance because I would often lack so much context for a particular conversation that any question that I could've formulated at the time would've completely derailed the meeting. For example, if a certain technology was brought up during a meeting that I wasn't aware of, I most likely wouldn't ask about it, because I wasn't about to stop the meeting so that the team could explain what Kubernetes or Next.js was to me.
 
