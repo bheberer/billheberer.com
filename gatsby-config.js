@@ -19,10 +19,23 @@ module.exports = {
     twitterURL: 'https://twitter.com/b_hebs'
   },
   plugins: [
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`
+          // {
+          //   resolve: `gatsby-remark-prismjs`,
+          //   options: {
+          //     classPrefix: 'language-',
+          //     inlineCodeMarker: '@',
+          //     noInlineHighlight: false
+          //   }
+          // }
+        ]
+      }
+    },
     'gatsby-plugin-emotion',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-layout`,

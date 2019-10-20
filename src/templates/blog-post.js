@@ -11,13 +11,13 @@ export default function Template({ data, location }) {
     initial: { opacity: 0, x: 300 },
     enter: {
       opacity: 1,
-      x: 0,
-      transition: { duration: 0.3, ease: 'easeInOut' }
+      translateX: -300,
+      transition: { duration: 0.3, ease: [0.645, 0.045, 0.355, 1] }
     },
     exit: {
       opacity: 0,
-      x: -300,
-      transition: { duration: 0.3, ease: 'easeInOut' }
+      translateX: -600,
+      transition: { duration: 0.3, ease: [0.645, 0.045, 0.355, 1] }
     }
   };
 

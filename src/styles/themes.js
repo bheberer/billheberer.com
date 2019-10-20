@@ -8,18 +8,18 @@ const lightTheme = {
     neutral: '#4C5153',
     border: '#D9D9D9'
   }
-}
+};
 
 const darkTheme = {
   colors: {
     primary: '#4bd4ff',
     primaryDark: '#3da6c7',
-    background: '#282729',
+    background: '#343436',
     neutralDark: '#d7e3ea',
     neutralLight: '#d7e3ea',
-    neutral: '#d7e3ea',
+    neutral: '#e5e9ed',
     border: '#d7e3ea'
   }
-}
+};
 
 export { lightTheme, darkTheme };

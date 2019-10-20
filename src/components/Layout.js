@@ -5,7 +5,6 @@ import { ThemeProvider } from 'emotion-theming';
 import GlobalStyleProvider from './GlobalStyleProvider';
 import Header from './Header';
 import { lightTheme, darkTheme } from '../styles/themes';
-import Toggle from './Toggle';
 import SEO from './SEO';
 
 export default function Layout({ children }) {
