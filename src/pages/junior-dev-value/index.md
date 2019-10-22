@@ -8,69 +8,49 @@ excerpt: 'How I Learned To Embrace My Role As An Inexeperienced Developer'
 
 ## The Knowledge Gap
 
-Starting your first job in tech is hard.
+I doubt that this will come as a news flash to anyone reading this right now, but startinng your first job in tech is hard. Really hard.
 
-There are a bunch of reasons for this but I think that for the most part it comes down to the fact that there's a crazy amount of things that you need to learn all at once. Or at the very least, you feel like you have to learn them all at once, as you're constantly bombarded with dozens of terms that you've never heard of before.
+There are a lot of reasons for this but for most people I think it comes down to the fact that there are just so many things to learn. If you're like me, and your first job was building apps for the web, not only do you need to learn the foundational technologies you'll be working with like HTML, CS and JavaScript, but you need to learn about the platform itself! The web is so idiosyncratic that it's tough to translate a lot of knowledge from desktop and mobile development.
 
-If you start in a web developer position without knowing anything about the web, like myself, then odds are you'll be spending a lot of time just trying to understand the platform that you're going to be writing code for, let alone understanding the framework your team uses.
+So learning the tech can be a bit of an undertaking but all in all, I think its manageable, especially if you enjoy the work. The problem is, is that you'll have to learn way more than just the tech. Companies are complex, even small ones, and ther's often a lot of 'tribal' and company specific knowledge that you're going to have to pick up in order to solve certain problems. That may not sound as hard as learning the tech, but I would argue that it is at least as hard as that because at least with tech you have documentation. Company knowledge isn't gained through study like tech knowledge. Often, you just pick it up over time and through conversation, making finding a piece of knowledge way more challenging.
 
-Then, on top of technology, there's probably going to be a lot of weird tribal knowledge and maybe product or company specific knowledge (stuff that should be documented but let's face it, probably isn't). This stuff can even be harder than learning the tech because if it isn't well documented, it can really only be gained through time, experience and conversation.
+As you go through your first couple of weeks on the job, it won't take long for you to realize just how much knowledge you need to gain in order to catch up to the people around you. This is a pretty overwhelming feeling, to say the least.
 
-So, you have many, many things to learn when you start your first job, and it's all going to take a lot of brain power. This won't come as a news flash to anyone who's had to go through this alredy but having all of these things bouncing around in your head can be overwhelming, to say the least. My first job in the industry was as a summer intern, working on a React project. I came in with a base level understanding of HTML, CSS and JavaScript, but I felt completely out of my depth.
-
-This isn't a particularly unique feeling amongst new devs. Another thing that I've noticed that many of use have in common is that we want to overcome this barrier as quickly as possible. I was very optimistic, and despite my lack of knoweldge, I desperately wanted to prove myself to my team and have an impact on the codebase.
+I felt completely out of my depth when I first started, which may sound like a bad thing, but on reflection, that feeling did come with a pro. It gave me a purpose, and it made me incredibly motivated. I was motivated to make sure that I caught up as quickly as I possibly could. Despite my lack of knowledge, I desperately wanted to prove myself to my team and have an impact on the project that I was working on.
 
 ## The Emotions
 
-Wanting to have an impact is grat and all but I quickly realized that doing so in the way that I was imagining was going to be a huge challenge. It's pretty hard to make an impact on the code when you know almost nothing about the tech stack that you're working with.
+Wanting to have an impact is great and all, but I quickly realized that doing so was going to be a serious challenge.
 
-For a good portion of my internship, I would come into work every day, sit down, look at our JIRA board and immediately become stressed by the amount of work that I knew I wouldn't be able to comlpete by myself. For some sprints, I wouldn't know how to do a single thing.
+On my team at GoDaddy, we follow a pretty close interpretation of Scrum, and we have a board in JIRA where we keep track of all of our pieces of work that we want to get done during a single sprint. For about the first half of my internship, which was a solid month and a half, I would look at the JIRA board and not have any idea of how to do well over half of the work. That left me with one viable path forward, which was pair programming. I'm a big fan of pair programming, it's a great way to learn and build up a team. That being said, the early pairing I was doing at my internship felt less like I was pairing to learn and more like I was pairing to survive. I didn't like being so reliant on my teammates.
 
-So, in order to get any work done, I would have to pair with somebody else on the team, which felt a little deflating to me. I knew that it was expected considering my background, but I didn't like the feeling of being so reliant on everyone else.
+Meetings were also rough in their own way, because they were often just full of conversations that I couldn't really be a part of. Odds are, I just didn't have enough context about a particular product, team or technology in order to contribute. I was constantly encouraged to ask questions, because I have good teammates, but I would often be reluctant to do so. If I was present for a conversation that involved a particular technology that I didn't know anything about (which was fairly common), the only question I could really ask what that technology was. Then that would probably lead to five more questions in order to get enough context to be able to particpate. So, I didn't end up asking questions like that during meetings. I would just wait until I could ask them the large-scale questions later.
 
-Meetings were also painful in their own way. For me, they usually involved a constant flood of terms and information that I didn't understand. Most meetings took me a long time to be able to contribute to beyond asking questions. I tried to ask questions as much as I could, but I often felt awkward doing this in meetings, especially ones that weren't part of a regular scrum ceremony rotation.
-
-I would feel this reluctance because I would often lack so much context for a particular conversation that any quesiton I could've forumulated at the time would've completely derailed the meeting. For example, if a certain technology was brought up during the meeting that I wasn't aware of, I probably wouldn't ask about it.
-
-Why bother? It's not like someone is going to be able to explain a technology like Jenkins or Kubernetes to me in the middle of a meeting. Any response they would give me would probably lead to five more questions.
-
-Over time, all of this stuff began to pile on, and I became really bothered. I felt like I was a complete burden to my team. From my perspective, I was just absorbing knowledge and resources from my team on a daily basis without providing anything truly useful in return.
-
-I wasn't helping anyone else solve their problems, I wasn't going and making big changes to the code, so what was I really doing? I hated this feeling. I didn't like not knowing things and I wanted to help others, not be helped myself. I wanted to make an imapct on something big, something visible that would prove to me that I had a real value.
+Over time, these day-to-day feelings started to wear down on me. I began to feel like I was a complete burden to my team. From my perspective, I was just absorbing knowledge and resources from my team without providing anything of value to them in return. I wasn't really helping anyone with their problems, I wasn't going and making big, productivity-boosting changes to the codebase, so as far as I was concerned, I wasn't really doing much of anything. I absolutely hated this feeling.
 
 ## The Plan
 
-The one positive thing that stemmed from feeling like a walking resource sink is that I became incredibly motivated to make sure that I was the opposite. Unfortunately, I put a lot of my energy in the wrong place. Instead of accepting my lack of knowledge and attempting to be a good teammate regardless, I resented it and attempted to fight back, to be what I was not.
+As with the feeling of being overwhelmed that I discussed earlier, this feeling of being burden did have a plus in that it was a huge motivator for me to perform as well as I could. For me, the one thing that could prove that I was really contributing to the team and prove that I was worth the effort that my teammates were putting into me was to make a big contribution in code. That felt real to me, it felt tangible and it was black and white. With something in code, I felt like it would be impossible for someone to say that I hadn't played my part appropriately.
 
-I wanted to make a code contribution, something that I thought would tangibly prove that the resources that my team was sinking into me were resources well spent.
+Now, this isn't a bad idea on its face. I think that being motivated to make serious code contributions is good thing, and making those kinds of contributions should be a goal of every new developer. That being said, I was very caught up in this goal, especially considering I had only three months to accomplish it. To me, if I couldn't achieve this goal, my internship wouldn't have been a complete success. It might've been good, but I would've left feeling like I left an opportunity on the table.
 
-Now, this wasn't a bad idea on its face. I think that being motivated to make important code contributions is good thing and everyone should strive to do so at some point. I, however, was impatient. I was on a schedule.
+So, I got incredibly impatient. Like I said, I had only three months on the table, so I had to go from knowing practically nothing about the web to making a serious code contribution to a React project in three months. That's no easy task.
 
-I was an intern, so I only had three months to make that big contribution I wanted to badly. Take yourself through that for a second. How was I, a developer that had almost zero prior experience writing React applications, supposed to make a truly significant, large-scale code contribution within the span of three months?
+I decided that I would make a trade off. Mind you, I wasn't really thinking it through that much during the internship itself, I was just doing what I thought I had to do, but it was a pretty serious trade off. I decided to play the short game instead of playing the long game. Instead of spending the better part of my time and energy learning about React and the fundementals of the web, I would spend my time learning about something really niche. My theory was that by focusing myself I could become hyper productive in one particular area in a relatively short period of time.
 
-The answer may surprise you, but there actually was a way for me to make a significant contribution, and I did make one towards the end of my internship. The problem was that it just wasn't very good.
-
-Basically, I decided that instead of making the smart long term decision to spend my time hunkering down and learning as much about the fundementals of the web and React as I could, I would pick one topic to become an 'expert' on so that I could be productive when it came to working in that particular area.
-
-During my internship, I decided that Redux was going to be the thing that I would spend my time getting really familiar with. React just seemed like such a behemoth to me at the time, and three months just wasn't enough time for me to get to a level where I could make big dents in the code. Redux, on the other hand, only has a couple of key concepts, and was used everywhere throughout our code. It felt just as important as React and appeared to be way easier to learn, so I went for it.
+For my internship, I decided that Redux was going to be my niche. Reach may seem like the logical choice, but React just seemed like too much of a behemoth to me at the time. Three months didn't seem like enough time to be able to become truly productive, so I learned a passable amount of React and went all in on Redux, which was much more approachable.
 
 ## The Result
 
-Without realizing it, I had made a pretty serious tradeoff. I was essentially saying that I was willing to forgoe the long term gains that I would recieve from learning the fundementals and in return, I would gain a boost to my productivity in the short term.
+Shockingly enough, I was actually able to accomplish my goal. Towards the end of my internship, I had made a pretty large impact on my team's codebase.
 
-If you had asked me what I felt about this tradeoff at the time, I would've told you that I was making the right call given the situation that I was in as an intern. Looking back on it now, I'm certain that I was on the bad end of that trade, and there are a couple of reasons that I feel this way.
+Not only did I achieve my goal, but as far as I could tell at the time, the decision to play the short term game really seemed to be working out in my favor. I was quite productive that summer and I pushed out a lot of code. Most of that code was pretty good, but there was one notable exception.
 
-That productivity worked really well for me in the context of that internship. I got a lot of work done that summer, and I pushed a lot of code into production. For that most part, that code was actually pretty good. I'm proud of most of the code that I pushed out last summer.
+I don't think it's rare for a developer to push out some code that they once thought was good and then cringe at later. In fact, it's probably a good thing that you look back and cringe, that means that you learned something. Unfortunately for me, the one piece of code from my internship that really sticks out to me as being particularly egregious is the code that constituted my big contribution. The biggest mark that I had left on that codebase also happened to be the worst, in my opinion.
 
-Unfortunately though, there was some code that I pushed out last summer that I now cringe to think about. I'm sure that this isn't a novel feeling. If I was to go around and take a survey of developers out there, most would say that they've felt the same at some point.
+That's bad enough, but after my internship finished I realized that playing the short game impacted negatively in another way. It sounds so obvious when I write it down, but I just didn't think of it at the time. When you play for the short game, you reduce your chances at succeeding in the long game, and that's what happened to me. By ignoring the fundementals and the knowledge that I would gain from focusing on them, I was basically ensuring that it would take me way longer to get to the point where I could actually help people and be a good teammate in the way that I envisioned.
 
-But, remember when I said before that I did end up making a significant code contribution? THAT was the bit of code that I look back on and cringe at. The code that ended up leaving the biggest mark on the codebase is the code that I believe to be the lowest quality of anything that I wrote that summer.
-
-While that's unfortunate in it of itself, I think that what was worse is that I made the decision that benefitted me in the short term, without thinking about my future beyond the internship.
-
-My lack of focus on the fundementals meant that it would actually take longer for me to get to the point in my career that I really wanted to be at. Being able to make those big, high quality contributions and partake in architectural discussion requires, at the bare minimum, an adept understanding of the fundementals, and I just wasn't focusing on it.
-
-It wasn't until after I left my job and took a real, deep dive into React that I gained enough knowledge to feel confident that I could at least make minor contributions to those kinds of conversations.
+It wasn't until after I left my job and took a real, deep dive into React that I gained enough knowledge to feel confident about helping others.
 
 ## The Revelation
 
@@ -86,7 +66,7 @@ It's just different and more subtle than than the value of senior developers. Th
 
 Junior developers value comes from the nature of who they are rather than the extent of their technical knowledge. Junior developers provide value by partaking in the team building and knowledge sharing processes of a team. They keep a team flexible by bringing on a fresh perspective and encourage the team to be better by their mere presence and engagement. Now, that all may seem a little less exciting depending on what you're into (I know it was for me at first), but I would argue that these contributions are just as important as the technical ones.
 
-If you find yourself not unconvinced, allow me to attempt to persuade you by further discussing the virtues of junior developers, and hopefully demonstrating how they seem to be so well disposed to participating in the process of team growth.
+If you find yourself not unconvinced, allow me to attempt to persuade you by further discussing the virtues of junior developers, and hopefully demonstrating how they seem to be so well disposed to participating in the process of team growth. I think that if I had truly paid attention and understood everything I'm about to share here, I wouldn't have made the same, impatient mistakes that I made during my internship.
 
 ## The Perspective
 
