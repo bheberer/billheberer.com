@@ -3,7 +3,14 @@ import { graphql } from 'gatsby';
 import { motion } from 'framer-motion';
 import { useTheme } from 'emotion-theming';
 
-export default function Template({ data, location }) {
+import Footer from '../components/Footer';
+
+export default function Template({
+  data,
+  location,
+  isDarkMode,
+  setIsDarkMode
+}) {
   const { title, date } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
 
@@ -23,43 +30,55 @@ export default function Template({ data, location }) {
 
   const { colors } = useTheme();
 
-  const { primary, neutral, neutralLight } = colors;
+  const { primary, neutral, neutralLight, primaryDark } = colors;
 
   return (
-    <motion.article
-      key={location.pathname}
-      variants={pageVariants}
-      animate="enter"
-      initial="initial"
-      exit="exit"
-      css={{
-        h1: {
-          color: primary,
-          fontSize: '32px',
-          fontWeight: 300,
-          display: 'flex',
-          flexDirection: 'row'
-        },
-        h2: { color: primary, fontWeight: 300 },
-        h3: { color: neutralLight, fontWeight: 300 },
-        hr: {
-          borderStyle: 'solid',
-          borderWidth: '0.5px',
-          borderColor: '#D9D9D9'
-        },
-        p: {
-          fontSize: '20px',
-          color: neutral,
-          lineHeight: '30px',
-          marginBottom: '1.75rem'
-        }
-      }}
-    >
-      <h1>{title}</h1>
-      <h3>{date}</h3>
-      <hr />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </motion.article>
+    <>
+      <motion.article
+        key={location.pathname}
+        variants={pageVariants}
+        animate="enter"
+        initial="initial"
+        exit="exit"
+        css={{
+          a: {
+            color: primary,
+            textDecoration: 'underline',
+            cursor: 'pointer',
+            transition: 'all .2s ease-in-out',
+            '&:hover': {
+              color: primaryDark
+            }
+          },
+          h1: {
+            color: primary,
+            fontSize: '32px',
+            fontWeight: 300,
+            display: 'flex',
+            flexDirection: 'row'
+          },
+          h2: { color: primary, fontWeight: 300 },
+          h3: { color: neutralLight, fontWeight: 300 },
+          hr: {
+            borderStyle: 'solid',
+            borderWidth: '0.5px',
+            borderColor: '#D9D9D9'
+          },
+          p: {
+            fontSize: '20px',
+            color: neutral,
+            lineHeight: '30px',
+            marginBottom: '1.75rem'
+          }
+        }}
+      >
+        <h1>{title}</h1>
+        <h3>{date}</h3>
+        <hr />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      </motion.article>
+    </>
   );
 }
 

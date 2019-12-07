@@ -14,9 +14,28 @@ module.exports = {
     employer: 'GoDaddy',
     siteURL: 'https://www.billheberer.com',
     employerURL: 'https://www.godaddy.com/',
-    linkedinURL: 'https://www.linkedin.com/in/william-heberer-umd/',
-    githubURL: 'https://github.com/bheberer',
-    twitterURL: 'https://twitter.com/b_hebs'
+    navData: [
+      {
+        url: 'billyheb@gmail.com',
+        label: 'email',
+        iconLabel: 'mail'
+      },
+      {
+        url: 'https://www.linkedin.com/in/william-heberer-umd/',
+        label: 'LinkedIn Profile',
+        iconLabel: 'linkedin'
+      },
+      {
+        url: 'https://github.com/bheberer',
+        label: 'Github Profile',
+        iconLabel: 'github'
+      },
+      {
+        url: 'https://twitter.com/b_hebs',
+        label: 'Twitter Profile',
+        iconLabel: 'twitter'
+      }
+    ]
   },
   plugins: [
     {

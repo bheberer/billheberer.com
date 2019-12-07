@@ -1,12 +1,10 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import feather from 'feather-icons';
 import { useTheme } from 'emotion-theming';
 
 import avatar from '../assets/avatar.png';
-import Toggle from './Toggle';
 
-export default function Header({ isDarkMode, setIsDarkMode }) {
+export default function Header() {
   return (
     <StaticQuery
       query={graphql`
@@ -17,23 +15,12 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               bio
               employer
               employerURL
-              twitterURL
-              linkedinURL
-              githubURL
             }
           }
         }
       `}
       render={data => {
-        const {
-          author,
-          bio,
-          employer,
-          employerURL,
-          twitterURL,
-          linkedinURL,
-          githubURL
-        } = data.site.siteMetadata;
+        const { author, bio, employer, employerURL } = data.site.siteMetadata;
 
         const { colors } = useTheme();
 
@@ -48,10 +35,11 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               justifyContent: 'center',
               img: {
                 maxWidth: '100px',
-                marginTop: 5
+                marginTop: 20
               },
               h1: {
                 margin: '0',
+                marginTop: 15,
                 fontWeight: '600',
                 fontSize: '48px',
                 color: neutralDark
@@ -86,14 +74,6 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
               }
             }}
           >
-            <Navbar
-              isDarkMode={isDarkMode}
-              setIsDarkMode={setIsDarkMode}
-              githubURL={githubURL}
-              linkedinURL={linkedinURL}
-              twitterURL={twitterURL}
-              border={border}
-            />
             <Bio
               author={author}
               bio={bio}
@@ -108,72 +88,10 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
   );
 }
 
-function Navbar({
-  githubURL,
-  linkedinURL,
-  twitterURL,
-  isDarkMode,
-  setIsDarkMode
-}) {
-  return (
-    <nav
-      css={{
-        marginTop: 10,
-        marginBottom: 20,
-        display: 'flex',
-        width: '100%',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        paddingTop: '10px',
-        a: { margin: '0 15px 0 15px' },
-        marginLeft: -30
-      }}
-    >
-      <a
-        aria-label="Github"
-        href={githubURL}
-        target="_blank"
-        rel="noopener noreferrer"
-        dangerouslySetInnerHTML={{
-          __html: feather.icons['github'].toSvg({
-            ['stroke-width']: 2.5,
-            width: 25,
-            height: 25
-          })
-        }}
-      />
-      <a
-        aria-label="LinkedIn"
-        href={linkedinURL}
-        target="_blank"
-        rel="noopener noreferrer"
-        dangerouslySetInnerHTML={{
-          __html: feather.icons['linkedin'].toSvg({
-            ['stroke-width']: 2.5,
-            width: 25,
-            height: 25
-          })
-        }}
-      />
-      <a
-        aria-label="Twitter"
-        href={twitterURL}
-        target="_blank"
-        rel="noopener noreferrer"
-        dangerouslySetInnerHTML={{
-          __html: feather.icons['twitter'].toSvg({
-            ['stroke-width']: 2.5,
-            width: 25,
-            height: 25
-          })
-        }}
-      />
-      <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-    </nav>
-  );
-}
-
 function Bio({ author, bio, employerURL, employer, border }) {
+  const { colors } = useTheme();
+  const { primary, primaryDark } = colors;
+
   return (
     <section
       css={{
@@ -195,10 +113,25 @@ function Bio({ author, bio, employerURL, employer, border }) {
           marginLeft: '20px'
         }}
       >
-        <h1>{author}</h1>
+        <Link to="/" css={{ textDecoration: 'none' }}>
+          <h1>{author}</h1>
+        </Link>
         <h2>
           {bio}
-          <a href={employerURL} target="_blank" rel="noopener noreferrer">
+          <a
+            css={{
+              color: primary,
+              textDecoration: 'underline',
+              cursor: 'pointer',
+              transition: 'all .2s ease-in-out',
+              '&:hover': {
+                color: primaryDark
+              }
+            }}
+            href={employerURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i>{employer}</i>
           </a>
         </h2>

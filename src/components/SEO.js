@@ -13,9 +13,6 @@ const SEOQuery = graphql`
         employer
         description
         siteURL
-        twitterURL
-        linkedinURL
-        githubURL
       }
     }
   }

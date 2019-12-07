@@ -20,6 +20,7 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
         height: 24,
         backgroundColor: primary,
         marginLeft: 'auto',
+        marginRight: 15,
         borderRadius: '50px',
         transition: 'all .2s ease-in-out',
         '&:hover': {

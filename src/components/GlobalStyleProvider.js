@@ -5,12 +5,16 @@ import { useTheme } from 'emotion-theming';
 export default function GlobalStyleProvider({ children }) {
   const { colors } = useTheme();
 
-  const { primaryDark, primary, background } = colors;
+  const { background } = colors;
 
   return (
     <>
       <Global
         styles={{
+          ['#gatsby-focus-wrapper']: {
+            minHeight: '100vh',
+            position: 'relative'
+          },
           body: {
             backgroundColor: background,
             overflowY: 'scroll',
@@ -22,16 +26,7 @@ export default function GlobalStyleProvider({ children }) {
             textRendering: 'optimizeLegibility',
             maxWidth: 600,
             margin: '0 auto',
-            transition: 'background-color .2s',
-            a: {
-              color: primary,
-              textDecoration: 'underline',
-              cursor: 'pointer',
-              transition: 'all .2s ease-in-out',
-              '&:hover': {
-                color: primaryDark
-              }
-            }
+            transition: 'background-color .2s'
           },
           ['@media (max-width: 600px)']: {
             body: {
