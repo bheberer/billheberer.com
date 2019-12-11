@@ -16,7 +16,7 @@ module.exports = {
     employerURL: 'https://www.godaddy.com/',
     navData: [
       {
-        url: 'billyheb@gmail.com',
+        url: 'mailto:billyheb@gmail.com',
         label: 'email',
         iconLabel: 'mail'
       },
