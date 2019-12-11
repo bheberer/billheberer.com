@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'emotion-theming';
 
 import GlobalStyleProvider from './GlobalStyleProvider';
@@ -36,9 +35,7 @@ export default function Layout({ children }) {
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyleProvider>
           <Header />
-          <AnimatePresence exitBeforeEnter>
-            {React.cloneElement(children, { setIsDarkMode, isDarkMode })}
-          </AnimatePresence>
+          {React.cloneElement(children, { setIsDarkMode, isDarkMode })}
           {/* <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /> */}
         </GlobalStyleProvider>
       </ThemeProvider>
