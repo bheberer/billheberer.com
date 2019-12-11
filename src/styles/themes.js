@@ -1,7 +1,7 @@
 const lightTheme = {
   colors: {
-    primary: '#2693b5',
-    primaryDark: '#195e73',
+    primary: '#0098ca',
+    primaryDark: '#006280',
     background: 'white',
     neutralDark: '#232425',
     neutralLight: '#5f696d',

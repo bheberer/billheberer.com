@@ -121,8 +121,8 @@ function Bio({ author, bio, employerURL, employer, border }) {
           <a
             css={{
               color: primary,
-              textDecoration: 'underline',
               cursor: 'pointer',
+              textDecoration: 'none',
               transition: 'all .2s ease-in-out',
               '&:hover': {
                 color: primaryDark

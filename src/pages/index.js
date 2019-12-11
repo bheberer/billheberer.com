@@ -17,8 +17,8 @@ export default function Index({ data, isDarkMode, setIsDarkMode }) {
         height: 'calc(100vh - 200px)',
         a: {
           color: primary,
-          textDecoration: 'underline',
           cursor: 'pointer',
+          textDecoration: 'none',
           transition: 'all .2s ease-in-out',
           '&:hover': {
             color: primaryDark

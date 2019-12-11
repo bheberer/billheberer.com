@@ -35,7 +35,6 @@ export default function Footer({
             css={{
               a: {
                 color: primary,
-                textDecoration: 'underline',
                 cursor: 'pointer',
                 transition: 'all .2s ease-in-out',
                 '&:hover': {
