@@ -18,12 +18,12 @@ module.exports = {
       {
         url: 'mailto:billyheb@gmail.com',
         label: 'email',
-        iconLabel: 'mail'
+        iconLabel: 'email'
       },
       {
         url: 'https://www.linkedin.com/in/william-heberer-umd/',
         label: 'LinkedIn Profile',
-        iconLabel: 'linkedin'
+        iconLabel: 'linkedIn'
       },
       {
         url: 'https://github.com/bheberer',

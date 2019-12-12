@@ -1,6 +1,6 @@
 import React from 'react';
-import feather from 'feather-icons';
 import { useTheme } from 'emotion-theming';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default function Toggle({ isDarkMode, setIsDarkMode }) {
   const { colors } = useTheme();
@@ -52,18 +52,11 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
             display: 'block',
             position: 'relative',
             top: 2.5,
-            width: 20,
-            height: 20,
             left: -12
           }}
-          dangerouslySetInnerHTML={{
-            __html: feather.icons['moon'].toSvg({
-              ['stroke-width']: 2.5,
-              width: 15,
-              height: 15
-            })
-          }}
-        />
+        >
+          <FaMoon size="15px" />
+        </span>
       ) : (
         <span
           css={{
@@ -71,19 +64,12 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
             display: 'block',
             position: 'relative',
             top: 2.5,
-            width: 20,
-            height: 20,
             left: 6,
             zIndex: 1
           }}
-          dangerouslySetInnerHTML={{
-            __html: feather.icons['sun'].toSvg({
-              ['stroke-width']: 2.5,
-              width: 15,
-              height: 15
-            })
-          }}
-        />
+        >
+          <FaSun size="15px" />
+        </span>
       )}
     </span>
   );
