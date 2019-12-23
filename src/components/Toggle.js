@@ -14,8 +14,8 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
       aria-label="dark mode toggle"
       tabIndex={0}
       css={{
-        display: 'flex',
-        alignItems: 'center',
+        display: 'inline-block',
+        position: 'relative',
         width: 50,
         height: 24,
         backgroundColor: primary,
@@ -34,43 +34,31 @@ export default function Toggle({ isDarkMode, setIsDarkMode }) {
     >
       <span
         css={{
-          position: 'relative',
+          position: 'absolute',
           width: 20,
           height: 20,
-          left: isDarkMode ? 27 : 2,
+          top: 2,
+          transform: `translateX(${isDarkMode ? '2px' : '27px'})`,
           transition: 'all .2s',
+          margin: 'auto',
           borderRadius: '50%',
-          backgroundColor: background,
-          zIndex: 2
+          backgroundColor: background
         }}
       />
-      {isDarkMode ? (
-        <span
-          css={{
-            zIndex: 1,
-            color: background,
-            display: 'block',
-            position: 'relative',
-            top: 2.5,
-            left: -12
-          }}
-        >
-          <FaMoon size="15px" />
-        </span>
-      ) : (
-        <span
-          css={{
-            color: background,
-            display: 'block',
-            position: 'relative',
-            top: 2.5,
-            left: 6,
-            zIndex: 1
-          }}
-        >
-          <FaSun size="15px" />
-        </span>
-      )}
+      <span
+        css={{
+          position: 'absolute',
+          color: background,
+          width: 15,
+          height: 15,
+          top: 4.5,
+          transform: `translateX(${isDarkMode ? '27px' : '5px'})`,
+          transition: 'all .2s',
+          margin: 'auto'
+        }}
+      >
+       {isDarkMode ? <FaMoon size="15px" /> : <FaSun size="15px" />} 
+      </span>
     </span>
   );
 }

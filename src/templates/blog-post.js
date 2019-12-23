@@ -26,11 +26,11 @@ export default function Template({ data, isDarkMode, setIsDarkMode }) {
         h1: {
           color: primary,
           fontSize: '32px',
-          fontWeight: 300,
+          fontWeight: 400,
           display: 'flex',
           flexDirection: 'row'
         },
-        h2: { color: primary, fontWeight: 300 },
+        h2: { color: primary, fontWeight: 400 },
         h3: { color: neutralLight, fontWeight: 300 },
         hr: {
           borderStyle: 'solid',
