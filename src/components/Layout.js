@@ -27,7 +27,7 @@ function useLocalStorage(key, initialValue) {
 }
 
 export default function Layout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useLocalStorage(false);
+  const [isDarkMode, setIsDarkMode] = useLocalStorage('theme', false);
   // const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <>
