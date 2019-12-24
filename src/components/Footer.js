@@ -68,7 +68,6 @@ export default function Footer({
             {navData.map(data => {
               return <NavIconLink key={data.label} {...data} />;
             })}
-            <Toggle />
           </nav>
         );
       }}
