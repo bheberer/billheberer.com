@@ -5,6 +5,7 @@ import { useTheme } from 'emotion-theming';
 import Footer from '../components/Footer';
 
 export default function Index({ data, isDarkMode, setIsDarkMode }) {
+  console.log("index", isDarkMode);
   const { edges } = data.allMarkdownRemark;
 
   const { colors } = useTheme();
