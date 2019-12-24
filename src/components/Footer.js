@@ -9,8 +9,6 @@ import { MdEmail } from 'react-icons/md';
 // import Email from '@material-ui/icons/Email';
 // import GitHub from '@material-ui/icons/GitHub';
 
-import Toggle from './Toggle';
-
 export default function Footer({
   stickyMode = false
 }) {
