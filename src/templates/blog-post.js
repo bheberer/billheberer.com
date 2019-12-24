@@ -4,7 +4,7 @@ import { useTheme } from 'emotion-theming';
 
 import Footer from '../components/Footer';
 
-export default function Template({ data, isDarkMode, setIsDarkMode }) {
+export default function Template({ data }) {
   const { title, date } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
 
@@ -49,7 +49,7 @@ export default function Template({ data, isDarkMode, setIsDarkMode }) {
       <h3>{date}</h3>
       <hr />
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Footer />
     </article>
   );
 }

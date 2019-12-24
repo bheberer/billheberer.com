@@ -12,8 +12,6 @@ import { MdEmail } from 'react-icons/md';
 import Toggle from './Toggle';
 
 export default function Footer({
-  isDarkMode,
-  setIsDarkMode,
   stickyMode = false
 }) {
   return (
@@ -70,7 +68,7 @@ export default function Footer({
             {navData.map(data => {
               return <NavIconLink key={data.label} {...data} />;
             })}
-            <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            <Toggle />
           </nav>
         );
       }}

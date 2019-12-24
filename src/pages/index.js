@@ -4,7 +4,7 @@ import { useTheme } from 'emotion-theming';
 
 import Footer from '../components/Footer';
 
-export default function Index({ data, isDarkMode, setIsDarkMode }) {
+export default function Index({ data }) {
   const { edges } = data.allMarkdownRemark;
 
   const { colors } = useTheme();
@@ -62,8 +62,6 @@ export default function Index({ data, isDarkMode, setIsDarkMode }) {
         })}
       </ul>
       <Footer
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
         stickyMode={true}
       />
     </div>
