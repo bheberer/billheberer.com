@@ -57,7 +57,7 @@ export default function Footer({
               marginBottom: 20,
               display: 'flex',
               width: '100%',
-              justifyContent: 'space-around',
+              justifyContent: 'flex-start',
               alignItems: 'center',
               paddingTop: '15px',
               borderTop: `1px solid ${border}`

@@ -40,7 +40,7 @@ export default function Template({ data }) {
         p: {
           fontSize: '20px',
           color: neutral,
-          lineHeight: '30px',
+          lineHeight: '28px',
           marginBottom: '1.75rem'
         }
       }}
