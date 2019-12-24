@@ -4,6 +4,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default function Toggle({ isDarkMode, setIsDarkMode }) {
   const { colors } = useTheme();
+  console.log("toggle", isDarkMode);
 
   const { primary, primaryDark, background } = colors;
 
