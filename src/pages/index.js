@@ -9,43 +9,36 @@ export default function Index({ data }) {
 
   const { colors } = useTheme();
 
-  const { border, neutralLight, primary, primaryDark } = colors;
+  const { neutralLight, primary, primaryDark } = colors;
 
   return (
     <div
       css={{
+        gridRow: '3',
+        gridColumn: '1 / last-line',
         height: 'calc(100vh - 200px)',
         a: {
           color: primary,
           cursor: 'pointer',
-          textDecoration: 'none',
           transition: 'all .2s ease-in-out',
           '&:hover': {
-            color: primaryDark
+            color: primaryDark,
+            textDecoration: 'underline'
           }
         },
         ul: {
           listStyleType: 'none',
-          marginBottom: 100,
+          margin: 0,
           padding: '0',
           fontSize: '20px',
-          li: {
-            display: 'flex',
-            justifyContent: 'space-around',
-            alignItems: 'flex-start',
-            borderBottom: `1px solid ${border}`,
-            padding: '25px 0 25px 0'
-          },
           P: {
-            margin: '0',
-            paddingTop: '5px',
             color: neutralLight,
-            fontWeight: 300
+            fontWeight: 300,
+            lineHeight: '22px'
           },
           a: {
             maxWidth: '450px',
-            lineHeight: '32.5px',
-            fontWeight: 700
+            lineHeight: '20px'
           }
         }
       }}
@@ -55,15 +48,50 @@ export default function Index({ data }) {
           const { path, title, date } = edge.node.frontmatter;
           return (
             <li key={path}>
-              <Link to={path}>{title}</Link>
-              <p>{date}</p>
+              <div
+                css={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  marginTop: '-32px',
+                  ['@media (max-width: 675px)']: {
+                    flexDirection: 'column'
+                  }
+                }}
+              >
+                <Link
+                  to={path}
+                  css={{
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    ['@media (max-width: 675px)']: {
+                      fontSize: '16px'
+                    }
+                  }}
+                >
+                  {title}
+                </Link>
+                <p
+                  css={{
+                    margin: 0,
+                    ['@media (max-width: 675px)']: {
+                      fontSize: '16px'
+                    }
+                  }}
+                >
+                  {date}
+                </p>
+              </div>
+              <p css={{ fontSize: 16, maxWidth: 514, marginTop: 10 }}>
+                {edge.node.excerpt}
+                <Link to={path} css={{ textDecoration: 'underline' }}>
+                  Continue Reading →
+                </Link>
+              </p>
             </li>
           );
         })}
       </ul>
-      <Footer
-        stickyMode={true}
-      />
+      <Footer stickyMode={true} />
     </div>
   );
 }
@@ -73,6 +101,7 @@ export const pageQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
+          excerpt(pruneLength: 180)
           frontmatter {
             title
             path

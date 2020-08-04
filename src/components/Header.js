@@ -2,8 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import { useTheme } from 'emotion-theming';
 
-import avatar from '../assets/avatar.png';
-
 export default function Header() {
   return (
     <StaticQuery
@@ -31,45 +29,32 @@ export default function Header() {
             css={{
               display: 'flex',
               flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              img: {
-                maxWidth: '100px',
-                marginTop: 20
-              },
+              justifyContent: 'space-between',
+              gridRow: '1 / 2',
+              gridColumn: '1 / last-line',
+              borderBottom: `1px solid ${border}`,
+              marginBottom: -12,
+              paddingBottom: 12,
               h1: {
                 margin: '0',
-                marginTop: 15,
                 fontWeight: '600',
-                fontSize: '48px',
+                lineHeight: '24px',
+                fontSize: '30px',
                 color: neutralDark
               },
               h2: {
                 margin: '0px',
                 fontWeight: '300',
-                fontSize: '20px',
+                lineHeight: '14px',
+                fontSize: '18px',
                 color: neutralLight
               },
-              a: {
-                fontWeight: 600
-              },
-              ['@media (max-width: 600px)']: {
-                marginTop: 15
-              },
-              ['@media (max-width: 450px)']: {
-                img: {
-                  maxWidth: '80px'
-                },
+              ['@media (max-width: 675px)']: {
                 h1: {
-                  fontSize: '36px'
+                  fontSize: '24px'
                 },
                 h2: {
-                  fontSize: '16px'
-                }
-              },
-              ['@media (max-width: 360px)']: {
-                h1: {
-                  fontSize: '30px'
+                  fontSize: '14px'
                 }
               }
             }}
@@ -93,49 +78,28 @@ function Bio({ author, bio, employerURL, employer, border }) {
   const { primary, primaryDark } = colors;
 
   return (
-    <section
-      css={{
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        borderBottom: `1px solid ${border}`,
-        paddingBottom: '20px',
-        marginBottom: '35px'
-      }}
-    >
-      <Link to="/">
-        <img src={avatar} alt="Bill Heberer" />
+    <>
+      <Link to="/" css={{ textDecoration: 'none' }}>
+        <h1>{author}</h1>
       </Link>
-      <div
-        css={{
-          display: 'flex',
-          flexDirection: 'column',
-          marginLeft: '20px'
-        }}
-      >
-        <Link to="/" css={{ textDecoration: 'none' }}>
-          <h1>{author}</h1>
-        </Link>
-        <h2>
-          {bio}
-          <a
-            css={{
-              color: primary,
-              cursor: 'pointer',
-              textDecoration: 'none',
-              transition: 'all .2s ease-in-out',
-              '&:hover': {
-                color: primaryDark
-              }
-            }}
-            href={employerURL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i>{employer}</i>
-          </a>
-        </h2>
-      </div>
-    </section>
+      <h2>
+        {bio}
+        <a
+          css={{
+            color: primary,
+            cursor: 'pointer',
+            transition: 'all .2s ease-in-out',
+            '&:hover': {
+              color: primaryDark
+            }
+          }}
+          href={employerURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {employer}
+        </a>
+      </h2>
+    </>
   );
 }

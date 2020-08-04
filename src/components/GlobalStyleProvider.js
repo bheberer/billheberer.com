@@ -11,27 +11,14 @@ export default function GlobalStyleProvider({ children }) {
     <>
       <Global
         styles={{
-          ['#gatsby-focus-wrapper']: {
-            minHeight: '100vh',
-            position: 'relative'
-          },
           body: {
+            margin: 0,
+            padding: 0,
             backgroundColor: background,
             overflowY: 'scroll',
             font: '16px "Helvetica Neue", Helvetica, Arial, sans-serif',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
             WebkitFontSmoothing: 'antialiased',
-            textRendering: 'optimizeLegibility',
-            maxWidth: 600,
-            margin: '0 auto',
-            transition: 'background-color .2s'
-          },
-          ['@media (max-width: 600px)']: {
-            body: {
-              maxWidth: '90%'
-            }
+            textRendering: 'optimizeLegibility'
           }
         }}
       />

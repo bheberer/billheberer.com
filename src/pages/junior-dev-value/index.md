@@ -1,12 +1,10 @@
 ---
 path: '/junior-dev-value'
 date: 'Sep 13 2019'
-title: 'The Subtle, Yet Colossal Impact of "Junior" Developers'
+title: 'The Value Of Junior Developers'
 tags: ['junior', 'developers', 'beginners', 'value', 'impact']
 excerpt: 'How I Learned To Embrace My Role As An Inexeperienced Developer'
 ---
-
-## The Knowledge Gap
 
 I doubt that this will come as a news flash to anyone reading this, but starting your first job in tech is hard. Really hard.
 

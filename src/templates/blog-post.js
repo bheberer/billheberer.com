@@ -10,11 +10,13 @@ export default function Template({ data }) {
 
   const { colors } = useTheme();
 
-  const { primary, neutral, neutralLight, primaryDark } = colors;
+  const { primary, neutralLight, primaryDark, neutralDark } = colors;
 
   return (
     <article
       css={{
+        gridRow: '2',
+        gridColumn: '1 / last-line',
         a: {
           color: primary,
           cursor: 'pointer',
@@ -24,30 +26,23 @@ export default function Template({ data }) {
           }
         },
         h1: {
+          marginTop: 20,
+          marginBottom: 0,
           color: primary,
-          fontSize: '32px',
-          fontWeight: 400,
-          display: 'flex',
-          flexDirection: 'row'
+          fontSize: '32px'
         },
-        h2: { color: primary, fontWeight: 400 },
-        h3: { color: neutralLight, fontWeight: 300 },
-        hr: {
-          borderStyle: 'solid',
-          borderWidth: '0.5px',
-          borderColor: '#D9D9D9'
-        },
+        h2: { color: primary, marginBottom: -10 },
+        h3: { color: neutralLight, fontWeight: 300, marginTop: 8 },
         p: {
-          fontSize: '20px',
-          color: neutral,
-          lineHeight: '28px',
+          fontSize: '16px',
+          color: neutralDark,
+          lineHeight: '32px',
           marginBottom: '1.75rem'
         }
       }}
     >
       <h1>{title}</h1>
       <h3>{date}</h3>
-      <hr />
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <Footer />
     </article>

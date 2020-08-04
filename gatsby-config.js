@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Personal Blog of Bill Heberer',
     author: 'Bill Heberer',
-    bio: 'Software Engineer building customer experiences at ',
+    bio: 'Frontend Engineer at ',
     description:
       'Personal blog of Bill Heberer. Software Engineer at GoDaddy and React enthusiast.',
     employer: 'GoDaddy',
@@ -41,6 +41,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        excerpt_separator: '<h1>',
         plugins: [
           `gatsby-remark-prismjs`
           // {
