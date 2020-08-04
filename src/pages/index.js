@@ -9,7 +9,7 @@ export default function Index({ data }) {
 
   const { colors } = useTheme();
 
-  const { neutral, primary, primaryDark } = colors;
+  const { neutralDark, neutralLight, primary, primaryDark } = colors;
 
   return (
     <div
@@ -32,7 +32,6 @@ export default function Index({ data }) {
           padding: '0',
           fontSize: '20px',
           P: {
-            color: neutral,
             fontWeight: 300,
             lineHeight: '22px'
           },
@@ -72,6 +71,7 @@ export default function Index({ data }) {
                 </Link>
                 <p
                   css={{
+                    color: neutralLight,
                     margin: 0,
                     ['@media (max-width: 675px)']: {
                       fontSize: '16px'
@@ -81,7 +81,7 @@ export default function Index({ data }) {
                   {date}
                 </p>
               </div>
-              <p css={{ fontSize: 16, maxWidth: 514, marginTop: 10 }}>
+              <p css={{ fontSize: 16, maxWidth: 514, marginTop: 10, color: neutralDark }}>
                 {edge.node.excerpt}
                 <Link to={path} css={{ textDecoration: 'underline' }}>
                   Continue Reading →
