@@ -9,7 +9,7 @@ export default function Index({ data }) {
 
   const { colors } = useTheme();
 
-  const { neutralLight, primary, primaryDark } = colors;
+  const { neutral, primary, primaryDark } = colors;
 
   return (
     <div
@@ -32,7 +32,7 @@ export default function Index({ data }) {
           padding: '0',
           fontSize: '20px',
           P: {
-            color: neutralLight,
+            color: neutral,
             fontWeight: 300,
             lineHeight: '22px'
           },

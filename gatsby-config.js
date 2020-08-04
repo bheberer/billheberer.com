@@ -31,7 +31,7 @@ module.exports = {
         iconLabel: 'github'
       },
       {
-        url: 'https://twitter.com/b_hebs',
+        url: 'https://twitter.com/bill_heberer',
         label: 'Twitter Profile',
         iconLabel: 'twitter'
       }
