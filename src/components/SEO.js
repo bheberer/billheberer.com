@@ -41,6 +41,11 @@ export default function SEO() {
                 type: 'image/png',
                 sizes: '48x48',
                 href: `${favicon}`
+              },
+              {
+                rel: 'stylesheet',
+                href:
+                  'https://fonts.googleapis.com/css?family=Open+Sans&display=fallback'
               }
             ]}
           />

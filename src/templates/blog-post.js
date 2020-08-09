@@ -29,10 +29,26 @@ export default function Template({ data }) {
           marginTop: 20,
           marginBottom: 0,
           color: primary,
-          fontSize: '32px'
+          fontSize: '32px',
+          ['@media (max-width: 675px)']: {
+            fontSize: '24px'
+          }
         },
-        h2: { color: primary, marginBottom: -10 },
-        h3: { color: neutralLight, fontWeight: 300, marginTop: 8 },
+        h2: {
+          color: primary,
+          marginBottom: -10,
+          ['@media (max-width: 675px)']: {
+            fontSize: '20px'
+          }
+        },
+        h3: {
+          color: neutralLight,
+          fontWeight: 300,
+          marginTop: 8,
+          ['@media (max-width: 675px)']: {
+            fontSize: '16px'
+          }
+        },
         p: {
           fontSize: '16px',
           color: neutralDark,
@@ -44,7 +60,6 @@ export default function Template({ data }) {
       <h1>{title}</h1>
       <h3>{date}</h3>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Footer />
     </article>
   );
 }

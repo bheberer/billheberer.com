@@ -16,7 +16,7 @@ export default function Index({ data }) {
       css={{
         gridRow: '3',
         gridColumn: '1 / last-line',
-        height: 'calc(100vh - 200px)',
+        // height: 'calc(100vh - 200px)',
         a: {
           color: primary,
           cursor: 'pointer',
@@ -36,14 +36,13 @@ export default function Index({ data }) {
             lineHeight: '22px'
           },
           a: {
-            maxWidth: '450px',
-            lineHeight: '20px'
+            maxWidth: '450px'
           }
         }
       }}
     >
       <ul>
-        {edges.map(edge => {
+        {edges.map((edge, i) => {
           const { path, title, date } = edge.node.frontmatter;
           return (
             <li key={path}>
@@ -51,7 +50,7 @@ export default function Index({ data }) {
                 css={{
                   display: 'flex',
                   justifyContent: 'space-between',
-                  marginTop: '-32px',
+                  marginTop: i === 0 ? '-32px' : '48px',
                   ['@media (max-width: 675px)']: {
                     flexDirection: 'column'
                   }
@@ -62,6 +61,7 @@ export default function Index({ data }) {
                   css={{
                     fontWeight: 700,
                     textDecoration: 'none',
+                    lineHeight: '26px',
                     ['@media (max-width: 675px)']: {
                       fontSize: '16px'
                     }
@@ -71,6 +71,7 @@ export default function Index({ data }) {
                 </Link>
                 <p
                   css={{
+                    fontWeight: 600,
                     color: neutralLight,
                     margin: 0,
                     ['@media (max-width: 675px)']: {
@@ -81,7 +82,14 @@ export default function Index({ data }) {
                   {date}
                 </p>
               </div>
-              <p css={{ fontSize: 16, maxWidth: 514, marginTop: 10, color: neutralDark }}>
+              <p
+                css={{
+                  fontSize: 16,
+                  maxWidth: 514,
+                  marginTop: 10,
+                  color: neutralDark
+                }}
+              >
                 {edge.node.excerpt}
                 <Link to={path} css={{ textDecoration: 'underline' }}>
                   Continue Reading →
@@ -91,7 +99,6 @@ export default function Index({ data }) {
           );
         })}
       </ul>
-      <Footer stickyMode={true} />
     </div>
   );
 }
@@ -101,7 +108,7 @@ export const pageQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
-          excerpt(pruneLength: 180)
+          excerpt(pruneLength: 170)
           frontmatter {
             title
             path
